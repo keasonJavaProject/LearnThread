@@ -19,14 +19,7 @@ public class MyFirstThread {
         if (!CollectionUtils.isEmpty(list)) {
             return list;
         }
-        List<Integer> list = new ArrayList<Integer>();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
-        list.add(5);
-        list.add(6);
-        return list;
+        return new ArrayList<Integer>();
     }
 
     public void showListRemoveWithForeach(){
@@ -50,6 +43,7 @@ public class MyFirstThread {
                 iterator.remove();
             };
         }
+        System.out.println(list);
     }
 
     public void showListRemoveWithListGet() {
