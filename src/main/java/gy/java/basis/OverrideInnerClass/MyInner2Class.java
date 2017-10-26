@@ -4,7 +4,7 @@ package gy.java.basis.OverrideInnerClass;
  * Created by KEASON on 2017/5/17.
  */
 public class MyInner2Class {
-    public InnerInterface getInnerInterface(String str) {
+    public InnerInterface getInnerInterface(final String str) {
         return new InnerInterface() {
             @Override
             public void show(int j) {

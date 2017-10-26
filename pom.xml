@@ -68,13 +68,13 @@
             <profile>
                 <id>development</id>
                 <activation>
-                    <jdk>1.7</jdk>
+                    <jdk>1.8</jdk>
                     <activeByDefault>true</activeByDefault>
                 </activation>
                 <properties>
-                    <maven.compiler.source>1.7</maven.compiler.source>
-                    <maven.compiler.target>1.7</maven.compiler.target>
-                    <maven.compiler.compilerVersion>1.7</maven.compiler.compilerVersion>
+                    <maven.compiler.source>1.8</maven.compiler.source>
+                    <maven.compiler.target>1.8</maven.compiler.target>
+                    <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
                 </properties>
             </profile>
         </profiles>

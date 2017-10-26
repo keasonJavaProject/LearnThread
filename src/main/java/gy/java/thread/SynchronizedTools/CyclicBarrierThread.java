@@ -24,7 +24,7 @@ public class CyclicBarrierThread {
 
     public static void main(String[] args) {
         for(int i=0;i <MAX_SIZE*2+1; i++){
-            int temp = i;
+            final int temp = i;
             new Thread(new Runnable() {
                 @Override
                 public void run() {

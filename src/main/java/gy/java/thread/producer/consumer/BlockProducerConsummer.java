@@ -46,8 +46,8 @@ public class BlockProducerConsummer {
 
 
     public static void main(String[] args) {
-        InnerConsumer innerConsumer = new InnerConsumer();
-        InnerProducer innerProducer = new InnerProducer();
+        final InnerConsumer innerConsumer = new InnerConsumer();
+        final InnerProducer innerProducer = new InnerProducer();
         new Thread(new Runnable() {
             @Override
             public void run() {

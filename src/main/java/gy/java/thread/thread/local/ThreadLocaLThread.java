@@ -12,7 +12,7 @@ public class ThreadLocaLThread {
     ThreadLocal threadLocalOne = new ThreadLocal();
     public void show() {
         for (int i = 0; i < 10; i++) {
-            int index = i;
+            final int index = i;
             new Thread(new Runnable() {
                 @Override
                 public void run() {

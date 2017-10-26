@@ -3,6 +3,8 @@ package gy.java.thread.simple;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.concurrent.CountDownLatch;
+
 /**
  * Created by KEASON on 2017/5/10.
  */
@@ -20,6 +22,7 @@ public class ThreadWithExceptionTest extends BaseTest {
     @Test
     public void showThread() throws Exception {
         service.showThread();
+        new CountDownLatch(1).await();
     }
 
 }

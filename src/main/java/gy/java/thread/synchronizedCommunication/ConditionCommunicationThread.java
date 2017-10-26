@@ -50,7 +50,7 @@ public class ConditionCommunicationThread {
     }
 
     public static void main(String[] args) {
-        InnerClass in = new InnerClass();
+        final InnerClass in = new InnerClass();
         new Thread(new Runnable() {
             @Override
             public void run() {

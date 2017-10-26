@@ -12,7 +12,7 @@ public class MutilSaleTicketsThread {
     }
 
     public  void show() {
-        Tickets tickets=new Tickets();
+        final Tickets tickets=new Tickets();
         new Thread(new Runnable() {
             @Override
             public void run() {

@@ -12,7 +12,7 @@ public class OneObjectThread {
     Student student = new Student();
     public void show() {
         for (int i =  0; i <10000 ; i++) {
-            Integer j = i;
+            final Integer j = i;
             new Thread(new Runnable() {
                 @Override
                 public void run() {
