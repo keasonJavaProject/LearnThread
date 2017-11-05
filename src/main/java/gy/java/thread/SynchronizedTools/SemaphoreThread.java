@@ -19,6 +19,22 @@ public class SemaphoreThread {
             pool.submit(new Runnable() {
                 @Override
                 public void run() {
+//                    if (semaphore.getQueueLength() > 0) {//若有等待，直接返回。
+//                        return ;
+//                    }
+
+                    //最多等待40个，可用来处理高并发订单，让线程去等待
+                    /** 但这种有问题，就是线程太多，一直处于等待中，会造成OutofMemory异常。
+                     * 在高并发订单中，所以用消息队列，对于耗时的高并发操作，把处理请求直接封装成消息，直接返回前端响应。
+                     * 然后再消息消费端，异步进行处理。
+                     *
+                     */
+                    if (semaphore.getQueueLength() > 40 ) {
+                        return ;
+                    }
+
+
+
                     try {
                         semaphore.acquire();
                         System.out.println(Thread.currentThread()+"进来，Semaphore left "+ semaphore.availablePermits());
