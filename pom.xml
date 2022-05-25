@@ -8,7 +8,7 @@
     <artifactId>com.gy.thread</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <spring.version>5.2.0.RELEASE</spring.version>
+        <spring.version>5.2.22.RELEASE</spring.version>
         <spring.version.four.treee.seven>4.3.7.RELEASE</spring.version.four.treee.seven>
         <mybatis.version>3.2.6</mybatis.version>
         <!-- log4j日志文件管理包版本 -->
